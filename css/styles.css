@@ -34,6 +34,10 @@ img {
 	font-size: 3rem;
 	font-weight: lighter;
 }
+/*Product Section*/
+.moveRight {
+	text-align: right;
+}
 
 /*About Section*/
 #about-section {
