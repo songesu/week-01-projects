@@ -1,1 +1,153 @@
+img {
+	width: 100%;
+}
+.row {
+	padding: 20px;
+}
 
+/*Header*/
+#header {
+	padding: 100px 200px;
+	background-image: url("../img/milkbg.jpg");
+	background-size: cover;
+	display: flex;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#header-content {
+	width: 80%;
+	padding: 150px 30px;
+	margin: 0 auto;
+	color: white;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+	background: rgba(0, 0, 0, .5); 
+}
+
+#header-content h1 {
+	font-size: 13rem;
+}
+
+#header-content p {
+	font-size: 3rem;
+	font-weight: lighter;
+}
+
+/*About Section*/
+#about-section {
+	padding: 50px 10px;
+	background-color: #D3D3D3;
+	display: block;
+}
+
+#about-section h2 {
+	font-size: 4rem;
+}
+
+#about-section div {
+	font-size: 1.8rem;
+}
+
+#cmonster-img {
+	width: 30%;
+	padding-right: 40px;
+}
+
+/*Contact Section*/
+#contact-us {
+	color: white;
+	background-color: #26A0CE;
+	padding: 50px 0px;
+}
+
+#contact-us h2 {
+	font-size: 4rem;
+}
+
+#contact-us div {
+	font-size: 2rem;
+}
+
+
+/*
+ *
+	Media Queries
+*
+*/
+
+
+/*----Mobile----*/
+@media only screen and (max-width: 700px) {
+	/*Header*/
+	#header { padding: 100px 50px; }
+	#header-content { width: 100%; }
+	#header-content h1 { font-size: 5rem; }
+	#header-content p { font-size: 2rem; }
+
+	/*Product*/
+	#cookies div img{
+		width: 100% !important;
+	}
+	/*About*/
+	#cmonster-img {
+		width: 100% !important;
+		padding-right: 0px;
+		padding-bottom: 20px;
+	}
+	#cmonster-img img{
+		width: 40%;
+	}
+	#about-section {
+		text-align: center;
+	}
+	/*Contact*/
+	#contact-us div {
+	font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	/*About*/
+	#about-section div {
+		font-size: 1.3rem !important;
+	}
+}
+/*----Smaller Screens----*/
+@media only screen and (max-width: 1200px){
+	/*Header*/
+	#header-content {
+		width: 100%;
+		padding: 50px 30px;
+	}
+	#header-content h1 { font-size: 7rem; }
+	#header-content p { font-size: 2rem; }
+
+	/*Product*/
+	#cookies div {
+	width: 100%;
+	text-align: center;
+	}
+	#cookies div img{
+	width: 40%;
+	margin: 0 auto;
+	}
+
+	/*About*/
+	#about-section div {
+		font-size: 1.5rem;
+	}
+	#cmonster-img {
+		width: 40%;
+		float: left;
+	}
+}
+
+/*----Large Screens----*/
+@media only screen and (min-width: 1201px){
+	/*About*/
+	#cmonster-img {
+		float: left;
+	}
+}
